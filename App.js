@@ -23,7 +23,7 @@ import useTimeout from './Custom Hooks/useTimeout';
 
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
+  // const isDarkMode = useColorScheme() === 'dark';
   const [count, setCount] = useState(10)
 
   const {color, changeColor} = useRandomColor();
@@ -31,9 +31,9 @@ const App = () => {
   const {value,toggleValue} = useToggle();
   const { clear, reset } = useTimeout(() => setCount(0), 1000)
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
+  // const backgroundStyle = {
+  //   backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+  // };
 
   return (
     <View style={{backgroundColor: "#" + color ,width: '100%',height:'100%'}}>
