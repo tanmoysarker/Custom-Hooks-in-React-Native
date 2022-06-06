@@ -9,7 +9,6 @@ function UseSyncExternalStore() {
       };
     },
     () => window.innerWidth
-    // () => -1,
   );
 
   return <p>Size: {width}</p>;
